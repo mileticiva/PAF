@@ -43,4 +43,5 @@ def jednoliko_gibanje(sila, masa, vrijeme):
     plt.ylabel("Ubrzanje (m/s²)")
     plt.title("a-t graf")
 
+    plt.tight_layout()
     plt.show()

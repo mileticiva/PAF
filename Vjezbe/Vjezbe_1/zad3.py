@@ -18,7 +18,7 @@ while uneseni == False:
     except ValueError:
         print("nije broj")
 
-k = (B[1]-A[1])/(B[0]-A[0])
-kx1 = -(k * A[0]) + A[1]
+k = (B[1]-A[1])/(B[0]-A[0])    
+l = -(k * A[0]) + A[1]
 
-print("y = " + str(k) + "x + " + str(kx1))
+print("y = " + str(k) + "x + " + str(l))

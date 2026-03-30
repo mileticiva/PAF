@@ -9,14 +9,14 @@ def jednadzba(A, B):
     plt.scatter([A[0], B[0]], [A[1], B[1]])
 
     k = (B[1]-A[1])/(B[0]-A[0])
-    kx1 = -(k * A[0]) + A[1]
+    l = -(k * A[0]) + A[1]
 
-    print("y = " + str(k) + "x + " + str(kx1))
+    print("y = " + str(k) + "x + " + str(l))
 
     manja = min(A[0], B[0])
     visa = max(A[0], B[0])
     x = np.linspace(manja, visa, 100)
-    y = k * x + kx1
+    y = k * x + l
     plt.plot(x, y)
 
     spremi = input("'prikazi' ili 'spremi': ")
@@ -24,6 +24,7 @@ def jednadzba(A, B):
         ime = input("ime fajla: ")
         plt.savefig(ime + ".pdf")
     else:
+        plt.grid()
         plt.show()
 
 uneseni = False
